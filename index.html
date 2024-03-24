@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дом</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .house {
+            width: 200px;
+            height: 150px;
+            background-color: #613613;
+            position: relative;
+            
+        }
+
+        .roof {
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 50px solid black;
+            position: absolute;
+            top: -50px;
+            left: 0;
+        }
+
+        .window {
+            width: 50px;
+            height: 50px;
+            background-color: #add8e6;
+            border-radius: 50%;
+            position: absolute;
+            top: 40px;
+            left: 75px;
+        }
+
+        .chimney {
+            width: 20px;
+            height: 80px;
+            background-color: #777;
+            position: absolute;
+            top: -90px;
+            left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="house">
+        <div class="roof"></div>
+        <div class="window"></div>
+        <div class="chimney"></div>
+    </div>
+</body>
+</html>
